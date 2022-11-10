@@ -4,47 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photo Carousel</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Food Carousel</title>
 </head>
 <body>
-    <main>
-        <div class="carousel">
-           
-            <div class="carousel__flow-container ">
-                <ul class="carousel__flow">
-                    <li class="carousel__slide current-slide">
-                        <img src="./assets/images/slide_1.jpg" alt="Foods" class="carousel__image">
-                    </li>
-                    <li class="carousel__slide">
-                        <img src="./assets/images/slide_5.jpg" alt="Foods" class="carousel__image"></li>
-                    <li class="carousel__slide">
-                        <img src="./assets/images/slide_3.jpg" alt="Foods" class="carousel__image"></li>
-                    <li class="carousel__slide">
-                        <img src="./assets/images/slide_6.jpg" alt="Foods" class="carousel__image"></li>
-                    <li class="carousel__slide">
-                        <img src="./assets/images/slide_8.jpg" alt="Foods" class="carousel__image"></li>
-                    <li class="carousel__slide">
-                        <img src="./assets/images/Image 1.png" alt="Foods" class="carousel__image"></li>
-                </ul>
-            </div>
-            <button class="carousel__button carousel__button--left">
-                <img src="./assets/icons/left.svg" alt="Left arrow">
-            </button>
-            <button class="carousel__button carousel__button--right">
-                <img src="./assets/icons/right.svg" alt="right arrow">
-            </button>
-            <div class="carousel__footer">
-                <button class="carousel__indicator current-slide"></button>
-                <button class="carousel__indicator"></button>
-                <button class="carousel__indicator"></button>
-                <button class="carousel__indicator"></button>
-                <button class="carousel__indicator"></button>
-                <button class="carousel__indicator"></button>
-            </div>
-        </div>
-    </main>
+     <!-- slider container -->
+     <div class="slider">
 
-    <script src="./assets/js/app.js"></script>
+        <div class="slide">
+          <img src="./assets/images/image13.avif" alt="Food Picture"/>
+        </div>
+  
+        <div class="slide">
+          <img src="./assets/images/image14.avif" alt="Food Picture" />
+        </div>
+  
+        <div class="slide">
+          <img src="./assets/images/image12.avif" alt="Food Picture" />
+        </div>
+  
+        <div class="slide">
+          <img src="./assets/images/image4.avif" alt="Food Picture" />
+        </div>
+
+        <div class="slide">
+            <img src="./assets/images/image19.avif" alt="Food Picture" />
+        </div>
+
+        <div class="slide">
+            <img src="./assets/images/image11.avif" alt="Food Picture" />
+        </div>
+  
+         <!-- Control buttons -->
+        <button class="btn btn-next">></button>
+        <button class="btn btn-prev"><</button>
+      </div>
+      <script src="./assets/js/app2.js"></script>
 </body>
 </html>

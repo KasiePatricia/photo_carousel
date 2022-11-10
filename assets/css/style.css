@@ -1,105 +1,63 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-main {
+body {
     height: 100vh;
+    display: grid;
+    place-items: center;
     background-image: linear-gradient(rgba(98, 89, 95, 0.5), rgb(203, 166, 166)), url("../images/slide_4.jpg");
     background-repeat: no-repeat; 
     background-size: cover;
-    
-}
-
-.carousel {
+  }
+  
+  .slider {
+    width: 100%;
+    max-width: 900px;
+    height: 650px;
     position: relative;
-    height: 600px;
-    width: 80%;
-    margin: 0 auto;
-}
-
-.carousel__image {
+    overflow: hidden;
+    border-radius: 15px;
+  }
+  
+  .slide {
+    width: 100%;
+    max-width: 900px;
+    height: 650px;
+    position: absolute;
+    transition: all 0.5s;
+  }
+  
+  .slide img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-.carousel__flow-container {
-    background: red;
-    height: 80%;
-    width: 40%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: relative;
-    overflow: hidden;
-}
-
-.carousel__flow {
-    margin: 0px;
-    padding: 0px;
-    list-style: none;
-    position: relative;
-    height: 100%;
-    transition: transform 250ms ease-in;
+  }
   
-}
-
-.carousel__slide {
+  .btn {
     position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-}
-
-.carousel__button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    border: 0;
-    background-color: rgba(255, 255, 255, 0.5);
-    cursor: pointer;
-    opacity: 0;
-}
-
-.carousel__button:hover {
-    opacity: 1;
-}
-
-.carousel__button--left {
-    left: 410px;
-}
-
-.carousel__button--right {
-    right: 410px;
-}
-
-.carousel__button img {
-    width: 90px;
-}
-
-.carousel__footer {
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
-}
-
-.carousel__indicator {
-    border: 0;
+    width: 85px;
+    height: 85px;
+    padding: 10px;
+    border: none;
     border-radius: 50%;
-    width: 15px;
-    height: 15px;
-    background: rgba(0, 0, 0, 0.3);
-    margin: 100px 12px 0;
+    z-index: 10px;
     cursor: pointer;
-}
+    background-color: #fff;
+    font-size: 60px;
+    opacity: 0;
+  }
 
-.carousel__indicator.current-slide {
-    background: rgba(0, 0, 0, 0.75);
-}
-
-.flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+  .btn:hover {
+    opacity: 1;
+  }
+  
+  .btn:active {
+    transform: scale(1.1);
+  }
+  
+  .btn-prev {
+    top: 45%;
+    left: 2%;
+  }
+  
+  .btn-next {
+    top: 45%;
+    right: 2%;
+  }

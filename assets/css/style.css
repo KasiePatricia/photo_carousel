@@ -6,11 +6,16 @@ body {
     background-repeat: no-repeat; 
     background-size: cover;
   }
+  .title {
+    color: aliceblue;
+    font-family: sans-serif;
+    font-size: 40px;
+  }
   
   .slider {
     width: 100%;
     max-width: 800px;
-    height: 550px;
+    height: 450px;
     position: relative;
     overflow: hidden;
     border-radius: 15px;
@@ -19,7 +24,7 @@ body {
   .slide {
     width: 100%;
     max-width: 800px;
-    height: 550px;
+    height: 450px;
     position: absolute;
     transition: all 0.5s;
   }
